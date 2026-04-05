@@ -1,11 +1,9 @@
-{
-    pipeline{
-        agent any
-        stage{
-            stage("Loggin"){
-                step{
-                    sh 'echo Hello from devesh side'
-                }
+pipeline {
+    agent any
+    stages {
+        stage('Logging') {
+            steps {
+                sh 'echo Hello from devesh side'
             }
         }
     }
